@@ -18,13 +18,22 @@ export default function Home() {
         <h1>React Counter App</h1>
         <CounterDisplay count={count} />
         <div className="mt-5 flex gap-5 justify-center items-center">
-          <button className="px-4 py-2 bg-green-600" onClick={increase}>
+          <button
+            className="px-4 py-2 bg-green-600 rounded-md"
+            onClick={increase}
+          >
             Increase
           </button>
-          <button className="px-4 py-2 bg-red-600" onClick={decrease}>
+          <button
+            className="px-4 py-2 bg-red-600 rounded-md"
+            onClick={decrease}
+          >
             Decrease
           </button>
-          <button className="px-4 py-2 bg-neutral-600" onClick={reset}>
+          <button
+            className="px-4 py-2 bg-neutral-600 rounded-md"
+            onClick={reset}
+          >
             Reset
           </button>
         </div>
