@@ -1,0 +1,67 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Lock",
+  "sourceName": "contracts/Lock.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_unlockTime",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "when",
+          "type": "uint256"
+        }
+      ],
+      "name": "Withdrawal",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "unlockTime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405260405161010038038061010083398101604081905261002291610028565b50610041565b60006020828403121561003a57600080fd5b5051919050565b60b18061004f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063251c1aa31460375780638da5cb5b146052575b600080fd5b603f60005481565b6040519081526020015b60405180910390f35b6001546064906001600160a01b031681565b6040516001600160a01b039091168152602001604956fea26469706673582212209bf85d511e9fee450fa2fb07acea6596778f3f259be66d36bdd9a5b661154c2264736f6c63430008140033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c8063251c1aa31460375780638da5cb5b146052575b600080fd5b603f60005481565b6040519081526020015b60405180910390f35b6001546064906001600160a01b031681565b6040516001600160a01b039091168152602001604956fea26469706673582212209bf85d511e9fee450fa2fb07acea6596778f3f259be66d36bdd9a5b661154c2264736f6c63430008140033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

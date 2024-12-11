@@ -1,0 +1,38 @@
+require("@nomicfoundation/hardhat-toolbox");
+
+/** @type import('hardhat/config').HardhatUserConfig */
+module.exports = {
+  defaultNetwork: 'coretest',
+solidity: {
+    version: '0.8.20',
+    settings: {
+      evmVersion: 'paris'
+    },
+    compilers: [
+      {
+         version: '0.8.20',
+         settings: {
+            evmVersion: 'paris',
+            optimizer: {
+               enabled: true,
+               runs: 200,
+            },
+         },
+      },
+    ],
+ },
+ ignition: {
+  gasPrice: 100000000000,
+ },
+  networks: {
+    coretest: {
+      minGasPrice: 100000000000,
+      chainId: 1115,
+      gasPrice: 100000000000,
+      url: "https://rpc.test.btcs.network",
+      accounts: [
+        '8a1836105ec5a98abecb48dd3974ea5576a93c9ba3de876e70806228e5c523b1'
+      ]
+    }
+  }
+};
